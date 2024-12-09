@@ -238,8 +238,8 @@ def main(args):
 
 if __name__ == "__main__":
     args_parser = default_argument_parser()
-    args_parser.add_argument("--train-file", default="/nasdata/dataset/wsi_shishi_mix_data_v2/mix_datasets/mix_v2/detectron2/nc20/train.txt", type=str)
-    args_parser.add_argument("--test-file", default=" /nasdata/dataset/wsi_shishi_mix_data_v2/mix_datasets/mix_v2/detectron2/nc20/val.txt", type=str)
+    args_parser.add_argument("--train-file", default="dataset/train.txt", type=str)
+    args_parser.add_argument("--test-file", default="dataset/val.txt", type=str)
     # args_parser.add_argument("--config-file", default="/nasdata/private/mbzuai/Retrie_Retina/src/config.py", type=str)
     args = args_parser.parse_args()
     print("Command Line Args:", args)
